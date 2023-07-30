@@ -2,8 +2,8 @@
     --white: white;
     --gray:  rgb(19, 19, 19);
     --purple: rgb(62, 0, 162);
-    --blue: rgb(43, 255, 0);
-    --green: rgb(26, 156, 0);
+    --blue: rgb(242, 234, 11);
+    --green: #00a2ff;
 }
 
 /* 
@@ -51,7 +51,7 @@ rgb(43, 255, 0)
 /* sky background URL:   https://jooinn.com/images/small-clouds-on-blue-sky.jpg */
 
 body  {
-    background-image: url('./images/starsbackground.jpg');
+    background-image: url('https://jooinn.com/images/small-clouds-on-blue-sky.jpg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
