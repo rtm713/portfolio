@@ -48,6 +48,7 @@ rgb(43, 255, 0)
 }
 
 html {
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
@@ -100,6 +101,12 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 #headDiv div{
     margin: auto;
+}
+
+#headDiv a{
+    margin: auto;
+    color: #00a2ff;
+    font-size: 18px;
 }
 
 #githubLogo:hover{
@@ -185,4 +192,12 @@ h4 {
     background-color: var(--darkBlue);
     border-bottom: 1px solid rgb(85, 85, 107);
     border-top: 1px solid rgb(85, 85, 107);
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 1px 1px 6px black;
+    margin: 5%;
 }
