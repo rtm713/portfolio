@@ -1,6 +1,7 @@
 :root {
     --white: white;
     --darkBlue: rgb(23, 23, 39);
+    --blueGray: rgb(50, 50, 70);
     --lightBlue: #007bc2;
     --lightBlueHover: #00a2ff;
 }
@@ -85,6 +86,12 @@ body  {
     font-size: 18px;
 }
 
+#headDiv a:hover{
+    text-decoration: none;
+    color: #ffea00;
+    text-shadow: 1px 1px 6px white;
+}
+
 #githubLogo:hover{
     border-radius: 100%;
     box-shadow: 1px 1px 15px silver;
@@ -138,6 +145,32 @@ h4 {
     border: 2px solid rgb(85, 85, 107);
 }
 
+#kuLogo{
+    position: absolute;
+    left: 4%;
+    bottom: 5%;
+}
+
+#scrollDown{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-20%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-10%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-5%); }
+    100% { transform:translateY(0); }
+}
 
 #aboutMePage {
     height: 100vh;
@@ -157,17 +190,23 @@ header h2 {
     font-size: 60px;
     font-weight: 700;
     text-shadow: 1px 1px 6px black;
-    margin: 4% 0 3% 8%;
+    margin: 3% 0 5% 6%;
 }
 
 header nav{
-    margin: 3% 6% 6% 0;
-    width: 25%;
+    margin: 3% 3% 6% 0;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     font-family: monospace;
     color: #00a2ff;
     font-size: 18px;
+}
+
+header nav a:hover{
+    text-decoration: none;
+    color: #ffea00;
+    text-shadow: 1px 1px 6px white;
 }
 
 #bioDiv {
@@ -206,4 +245,17 @@ header nav{
 
 #mysql{
     margin-top: -16px;
+}
+
+#projectPage{
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: var(--blueGray);
+}
+
+
+#contactPage{
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: var(--darkBlue);
 }
