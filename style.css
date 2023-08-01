@@ -1,9 +1,8 @@
 :root {
     --white: white;
-    --gray:  rgb(19, 19, 19);
-    --purple: rgb(62, 0, 162);
-    --blue: rgb(242, 234, 11);
-    --green: #00a2ff;
+    --darkBlue: rgb(23, 23, 39);
+    --lightBlue: #007bc2;
+    --lightBlueHover: #00a2ff;
 }
 
 /* 
@@ -49,7 +48,7 @@ rgb(43, 255, 0)
 }
 
 html {
-    height: 100%;
+    scroll-snap-type: y mandatory;
 }
 
 /* sky background URL:   https://jooinn.com/images/small-clouds-on-blue-sky.jpg */
@@ -83,6 +82,11 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 } */
 
+#homePage {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
 #headDiv {
     display: flex;
     justify-content: space-evenly;
@@ -110,7 +114,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 h1 {
     color: var(--white);
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
     text-shadow: 2px 2px 4px black;
     animation-name: slideInRight;
@@ -119,8 +123,12 @@ h1 {
 
 h3 {
     color: rgb(173, 173, 173);
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 1px 1px 2px black;
+}
+
+p {
+    color: rgb(173, 173, 173);
 }
 
 main {
@@ -168,4 +176,13 @@ h4 {
 
 .carousel-inner {
     border: 2px solid rgb(85, 85, 107);
+}
+
+
+#aboutMePage {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: var(--darkBlue);
+    border-bottom: 1px solid rgb(85, 85, 107);
+    border-top: 1px solid rgb(85, 85, 107);
 }
