@@ -100,11 +100,11 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 #githubLogo:hover{
     border-radius: 100%;
-    box-shadow: 1px 1px 10px silver;
+    box-shadow: 1px 1px 15px silver;
 }
 
 #linkedinLogo:hover{
-    border-radius: 5%;
+    border-radius: 10%;
     box-shadow: 1px 1px 10px silver;
 }
 
