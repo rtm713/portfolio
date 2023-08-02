@@ -88,7 +88,7 @@ body  {
 
 #headDiv a:hover{
     text-decoration: none;
-    color: #ffea00;
+    color: #ffffff;
     text-shadow: 1px 1px 6px white;
 }
 
@@ -146,9 +146,8 @@ h4 {
 }
 
 #kuLogo{
-    position: absolute;
-    left: 4%;
-    bottom: 5%;
+    float: left;
+    margin-right: 10px;
 }
 
 #scrollDown{
@@ -205,7 +204,7 @@ header nav{
 
 header nav a:hover{
     text-decoration: none;
-    color: #ffea00;
+    color: #ffffff;
     text-shadow: 1px 1px 6px white;
 }
 
@@ -218,14 +217,19 @@ header nav a:hover{
     height: 60vh;
     border-radius: 50%;
     border: 1px solid rgb(85, 85, 107);
+    box-shadow:  20px 20px 44px #0f0f1a,
+    -20px -20px 44px #1f1f34;
 }
 
 #bioBox {
     height: 60%;
     width: 50%;
-    background-color: rgb(53, 53, 53);
+    background-color: var(--darkBlue);
     padding: 2%;
     border: 1px solid rgb(85, 85, 107);
+    border-radius: 56px;
+    box-shadow:  20px 20px 44px #0f0f1a,
+    -20px -20px 44px #1f1f34;
 }
 
 #bioBox p{
