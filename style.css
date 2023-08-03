@@ -145,51 +145,36 @@ main {
 }
 
 .projectBox {
-    position: relative;
-    width: 190px;
-    height: 254px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding: 2px;
-    gap: 12px;
-    border-radius: 8px;
-    cursor: pointer;
+    justify-content: center;
+    height: 45vh;
+    width: 30vw;
+    background-color: #171717;
+    border-radius: 20px;
+    text-align: center;
 }
 
-.projectBox::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -5px;
-    margin: auto;
-    width: 200px;
-    height: 264px;
-    border-radius: 10px;
-    background: linear-gradient(-45deg, #16a1b9 0%, #074158 100% );
-    z-index: -2;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.projectContainer {
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 22px;
+    transition: all .3s;
 }
 
-.projectBox::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg,  #16a1b9 0%, #074158
-     100% );
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
+.projectCard {
+    border-radius: 0;
+    transition: all .2s;
 }
 
-.projectBox:hover::after {
-    filter: blur(30px);
+.projectCard:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
 }
 
-.projectBox:hover::before {
-    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+.projectContainer:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
+
 
 h4 {
     color: white;
@@ -313,18 +298,19 @@ header nav a:hover{
 
 #projectBoxContainer {
     height: 70vh;
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
  /* ------------------- flip card ------------------------- */
   
  .flip-card {
     background-color: transparent;
-    width: 190px;
-    height: 254px;
+    width: 21vw;
+    height: 30vh;
     perspective: 1000px;
     font-family: sans-serif;
 }
@@ -347,8 +333,6 @@ header nav a:hover{
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    border-radius: 1rem;
-    box-shadow: 1px 1px 20px var(--lightBlueHover);
 }
 
 .flip-card-front, .flip-card-back {
@@ -364,6 +348,12 @@ header nav a:hover{
     border-radius: 1rem;
 }
 
+.flip-card-front:hover, .flip-card-back{
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00ff75, #3700ff) 1;
+}
+
 .flip-card-front {
     background-image: url(./images/nasaImageLibrary.png);
     background-size: cover;
@@ -372,6 +362,10 @@ header nav a:hover{
 .flip-card-back {
     background-color: var(--darkBlue);
     transform: rotateY(180deg);
+}
+
+.glow:hover{
+    box-shadow: 1px 1px 20px #00ff75;
 }
 
 #contactPage{
