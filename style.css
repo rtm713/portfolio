@@ -144,37 +144,6 @@ main {
     margin: auto;
 }
 
-.projectBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 45vh;
-    width: 30vw;
-    background-color: #171717;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.projectContainer {
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-    border-radius: 22px;
-    transition: all .3s;
-}
-
-.projectCard {
-    border-radius: 0;
-    transition: all .2s;
-}
-
-.projectCard:hover {
-    transform: scale(0.98);
-    border-radius: 20px;
-}
-
-.projectContainer:hover {
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-}
-
 
 h4 {
     color: white;
@@ -372,4 +341,72 @@ header nav a:hover{
     height: 100vh;
     scroll-snap-align: start;
     background-color: var(--darkBlue);
+}
+
+#contactContainerBox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65vh;
+    width: 60vw;
+    background-color: #171717;
+    padding: 5%;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(194, 194, 194);
+    border: 1px solid rgb(85, 85, 107);
+}
+
+.contactBox input, textarea{
+    border-radius: 10px;
+    background-color:#222222;
+    width: 90%;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #00ff75;
+    padding: 5px 15px 5px 15px;
+}
+
+.contactBox  input[type="submit"]{
+    margin: auto;
+    width: max-content;
+    padding: .5rem 2rem .5rem 2rem;
+    border: 1px solid black;
+    color: #00ff75;
+    box-shadow: 1px 1px 5px black;
+}
+
+.contactBox  input[type="submit"]:hover{
+    color: black;
+    background-color:#00ff75;
+    transition: box-shadow .2s;
+    box-shadow: 1px 1px 20px #00ff75;
+}
+
+.contactContainer {
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 22px;
+    transition: all .3s;
+}
+
+.contactCard {
+    border-radius: 0;
+    transition: all .2s;
+}
+
+.contactCard:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.contactContainer:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
