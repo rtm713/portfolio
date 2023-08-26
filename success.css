@@ -1,0 +1,55 @@
+:root {
+    --white: white;
+    --darkBlue: rgb(23, 23, 39);
+    --blueGray: rgb(44, 44, 59);
+    --lightBlue: #007bc2;
+    --lightBlueHover: #00a2ff;
+}
+
+body {
+    background-color: var(--darkBlue);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#thanks {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    margin-top: 10%;
+    background-color: var(--blueGray);
+    padding: 5%;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+#thanks h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#thanks p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#thanks a {
+    width: fit-content;
+    background-color: var(--lightBlue);
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#thanks a:hover{
+    background-color: var(--lightBlueHover);
+}
