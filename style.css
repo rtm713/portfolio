@@ -1,3 +1,6 @@
+
+
+
 :root {
     --white: white;
     --darkBlue: rgb(23, 23, 39);
@@ -248,10 +251,18 @@ header nav a:hover{
     width: 55%;
     margin: auto;
     text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
 }
 
 #introTextbox h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 34px;
+}
+
+.signature {
+    font-family: 'Hurricane', cursive;
+    font-size: 28px;
 }
 
 .bioBox {
