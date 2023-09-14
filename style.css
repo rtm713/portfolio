@@ -216,22 +216,47 @@ header nav a:hover{
     text-shadow: 1px 1px 6px white;
 }
 
+#introBox {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: var(--blueGray);
+    padding: 2%;
+    border: 1px solid rgb(85, 85, 107);
+    border-radius: 56px;
+    display: inline-flex;
+}
+
 #bioDiv {
     display: inline-flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 #bioPicBox img{
-    height: 60vh;
+    height: 100%;
+    margin: auto;
     border-radius: 50%;
     border: 1px solid rgb(85, 85, 107);
-    box-shadow:  20px 20px 44px #0f0f1a,
-    -20px -20px 44px #1f1f34;
+    box-shadow:  10px 10px 20px #22222e,
+             -10px -10px 20px #363648;
 }
 
-#bioBox {
+#introTextbox {
+    color: white;
+    height: 80%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+#introTextbox h2 {
+    margin-bottom: 2rem;
+}
+
+.bioBox {
     height: 60%;
-    width: 50%;
+    width: 30%;
     background-color: var(--darkBlue);
     padding: 2%;
     border: 1px solid rgb(85, 85, 107);
@@ -240,7 +265,7 @@ header nav a:hover{
     -20px -20px 44px #1f1f34;
 }
 
-#bioBox p{
+.bioBox p{
     color: white;
 }
 
