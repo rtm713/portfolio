@@ -156,11 +156,6 @@ h4 {
 
 }
 
-#kuLogo{
-    float: left;
-    margin-right: 10px;
-}
-
 #scrollDown{
     position: absolute;
     bottom: 5%;
@@ -299,17 +294,33 @@ header nav a:hover{
     border-radius: 56px;
     box-shadow:  20px 20px 44px #0f0f1a,
     -20px -20px 44px #1f1f34;
+    text-align: center;
 }
 
-.bioBox p{
+.bioBox h3 {
     color: white;
+    text-shadow: 1px 1px 4px black;
+    font-size: 28px;
+}
+
+.boldOne{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#kuLogo{
 }
 
 #logoBox{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 5%;
     text-align: center;
+}
+
+#logoBox div {
+    width: 25%;
 }
 
 #logoBox p{
