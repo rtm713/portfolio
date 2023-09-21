@@ -286,7 +286,7 @@ header nav a:hover{
 }
 
 .bioBox {
-    height: 60%;
+    height: 60vh;
     width: 30%;
     background-color: var(--darkBlue);
     padding: 2%;
@@ -295,20 +295,25 @@ header nav a:hover{
     box-shadow:  20px 20px 44px #0f0f1a,
     -20px -20px 44px #1f1f34;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bioBox h3 {
     color: white;
     text-shadow: 1px 1px 4px black;
     font-size: 28px;
+    margin-bottom: 20px;
 }
+
+/* .bioBox p {
+    margin-top: 20px;
+} */
 
 .boldOne{
     font-size: 17px;
     font-weight: 700;
-}
-
-#kuLogo{
 }
 
 #logoBox{
@@ -344,6 +349,12 @@ header nav a:hover{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#ppInstructions {
+    margin-top: -3%;
+    text-align: center;
+    color: #00ff75;
 }
 
  /* ------------------- flip card ------------------------- */
@@ -394,8 +405,23 @@ header nav a:hover{
     border-style: solid;
     border-image: linear-gradient(to right, #00ff75, #3700ff) 1;
 }
-
+/* 
 .flip-card-front {
+    background-image: url(./images/nasaImageLibrary.png);
+    background-size: cover;
+} */
+
+#fcOne {
+    background-image: url(./images/Screenshot\ 2023-04-15\ 175532.png);
+    background-size: cover;
+}
+
+#fcTwo {
+    background-image: url(./images/Screenshot\ 2023-07-10\ 203047.png);
+    background-size: cover;
+}
+
+#fcThree {
     background-image: url(./images/nasaImageLibrary.png);
     background-size: cover;
 }
