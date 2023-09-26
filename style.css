@@ -307,9 +307,13 @@ header nav a:hover{
     margin-bottom: 20px;
 }
 
-/* .bioBox p {
-    margin-top: 20px;
-} */
+#edBoxCenter {
+    margin-top: 10%;
+}
+
+#edBoxCenter #kuLogo {
+    margin-bottom: 10%;
+}
 
 .boldOne{
     font-size: 17px;
@@ -334,6 +338,11 @@ header nav a:hover{
 
 #mysql{
     margin-top: -16px;
+}
+
+#backgroundList {
+    color: rgb(173, 173, 173);
+    text-align: left;
 }
 
 #projectPage{
