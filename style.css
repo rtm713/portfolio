@@ -353,25 +353,20 @@ header nav a:hover{
 
 #projectBoxContainer {
     height: 70vh;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
+    margin-top: -2%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#ppInstructions {
-    margin-top: -3%;
-    text-align: center;
-    color: #00ff75;
-}
-
  /* ------------------- flip card ------------------------- */
-  
+
  .flip-card {
     background-color: transparent;
-    width: 21vw;
-    height: 30vh;
+    width: 20vw;
+    height: 28vh;
     perspective: 1000px;
     font-family: sans-serif;
 }
@@ -442,6 +437,21 @@ header nav a:hover{
 
 .glow:hover{
     box-shadow: 1px 1px 20px #00ff75;
+}
+
+.sideProjectDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ .featureCard {
+    margin: auto;
+ }
+  
+#fcFeatured {
+    height: 58vh;
+    width: 38vw;
 }
 
 #contactPage{
