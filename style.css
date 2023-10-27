@@ -43,14 +43,6 @@ rgb(43, 255, 0)
     }
 }
 
-.grow { 
-    transition: all .2s ease-in-out; 
-}
-
-.grow:hover { 
-    transform: scale(1.1); 
-}
-
 .fade-in-one {
     animation: fadeInHide 1s, fadeIn 3s 1s;
 }
@@ -77,6 +69,10 @@ body  {
     scroll-snap-align: start;
 }
 
+#mobileNav{
+    display: none;
+}
+
 #headDiv {
     display: flex;
     justify-content: space-evenly;
@@ -96,22 +92,6 @@ body  {
     margin: auto;
     color: #00a2ff;
     font-size: 18px;
-}
-
-#headDiv a:hover{
-    text-decoration: none;
-    color: #ffffff;
-    text-shadow: 1px 1px 6px white;
-}
-
-#githubLogo:hover{
-    border-radius: 100%;
-    box-shadow: 1px 1px 15px silver;
-}
-
-#linkedinLogo:hover{
-    border-radius: 10%;
-    box-shadow: 1px 1px 10px silver;
 }
 
 h1 {
@@ -206,12 +186,6 @@ header nav{
     font-family: monospace;
     color: #00a2ff;
     font-size: 18px;
-}
-
-header nav a:hover{
-    text-decoration: none;
-    color: #ffffff;
-    text-shadow: 1px 1px 6px white;
 }
 
 #introBox {
@@ -529,7 +503,39 @@ header nav a:hover{
 }
 
 
-@media (max-width:450px) {
+@media (max-width:600px) {
+
+    #headDiv{
+        display: none;
+    }
+
+    #mobileNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--darkBlue);
+        color: white;
+    }
+
+    #mobileNav h2 {
+        padding: 10px;
+    }
+
+    #hamburgerButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10px;
+        width: 30px;
+        height: 21px;
+    }
+
+    #hamburgerButton .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
 
     #introBox{
         display: inline-flex;
@@ -551,4 +557,38 @@ header nav a:hover{
         height: 20%;
         width: 80%;
     }
+}
+
+@media (min-width:1200px) {
+
+    .grow { 
+        transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+        transform: scale(1.1); 
+    }
+
+    #headDiv a:hover{
+        text-decoration: none;
+        color: #ffffff;
+        text-shadow: 1px 1px 6px white;
+    }
+    
+    #githubLogo:hover{
+        border-radius: 100%;
+        box-shadow: 1px 1px 15px silver;
+    }
+    
+    #linkedinLogo:hover{
+        border-radius: 10%;
+        box-shadow: 1px 1px 10px silver;
+    }
+
+    header nav a:hover{
+        text-decoration: none;
+        color: #ffffff;
+        text-shadow: 1px 1px 6px white;
+    }
+
 }
